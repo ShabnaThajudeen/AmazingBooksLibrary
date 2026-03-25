@@ -1,0 +1,5 @@
+insert into book (bookId, isbn, title, publishedDate, totalCopies, issuedCopies, author) values (1, '978-1-78-110048-6', 'Harry Potter and the Sorcerers Stone', '2015-12-08', 10, 0, 'J.K. Rowling');
+insert into book (bookId, isbn, title, publishedDate, totalCopies, issuedCopies, author) values (2, '978-9-38-065874-2', 'The Immortals of Meluha', '2010-01-01', 100, 0, 'Tripathi, Amish');
+insert into book (bookId, isbn, title, publishedDate, totalCopies, issuedCopies, author) values (3, '978-0-30-795068-0', 'The Lost Symbol (Robert Langdon)', '2012-05-01', 20, 0, 'Brown, Dan');
+insert into book (bookId, isbn, title, publishedDate, totalCopies, issuedCopies, author) values (4, '978-0-30-727767-1', 'The Da Vinci Code (Robert Langdon)', '2006-03-28', 15, 0, 'Brown, Dan');
+insert into book (bookId, isbn, title, publishedDate, totalCopies, issuedCopies, author) values (5, '978-0-31-231319-7', 'Sons of Fortune', '2003-01-08', 2, 0, 'Archer, Jeffrey');

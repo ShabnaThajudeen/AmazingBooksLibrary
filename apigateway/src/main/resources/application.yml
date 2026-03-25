@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: apigateway
+
+
+  cloud:
+    gateway:
+      routes:
+        - id: issuermsid
+          uri: lb://issuerms
+          predicates:
+            - Path=/bookorder/**
+        - id: bookmsid
+          uri: lb://bookms
+          predicates:
+            - Path=/books/**
+            
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+         include: '*'
