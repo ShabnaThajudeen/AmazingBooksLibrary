@@ -76,8 +76,8 @@ public class BookOrderResource {
 		
 		LOGGER.info("Fetched book details from bookms");	
 		
-			
-		Mono<Object> mono = bookMono.map(book -> {			
+		//Asynchronous processing of reactive object 	
+		Mono<BookDTO> mono = bookMono.flatMap(book -> {			
 			LOGGER.info("Book Details is: ", book.toString());
 			int availableCopies = book.getTotalCopies() - book.getIssuedCopies();
 			LOGGER.info("Available copies = ", availableCopies);
@@ -106,7 +106,7 @@ public class BookOrderResource {
 			.put()			
 			.uri("books/updatecopy/" + order.getIsbn())
 			.retrieve()
-			.bodyToMono(Object.class);
+			.bodyToMono(BookDTO.class);
 		});	
 		
 		return mono;		
