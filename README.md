@@ -14,7 +14,7 @@ issuerms: A Spring Boot microservice to issue and cancel book issue. A reactive 
 Technology Stack:
 Back-end framework & Microservices - Java 17, Spring Boot 3, Spring MVC, Spring Security (OAuth2), Microservices, Netflix Eureka, Spring Cloud Gateway 
 API & Data Interchange - RESTful API, Swagger UI, YML 
-Data Access & Persistence - Spring Data JPA, IBM DB2 
+Data Access & Persistence - Spring Data JPA, H2 
 DevOps, Containerization & Infrastructure - Docker, Docker Hub, Docker-Compose, Apache Tomcat 
 Build, Version Control & Operations - Maven, Git/GitHub, SLF4J, 
 Monitoring, Metrics & Visualization - Spring Boot Actuator, Prometheus, Grafana
